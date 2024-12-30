@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://meta-testing-delta.vercel.app/logo.webp",
+        secureUrl: "https://meta-testing-delta.vercel.app/logo.webp", // Added secure URL
+        type: "image/webp", // Specified the image type
         width: 800,
         height: 600,
         alt: "Your Image Description",
@@ -27,9 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
